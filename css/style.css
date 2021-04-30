@@ -1,10 +1,55 @@
 body {
     background-color: lightblue;
   }
-  /* ul {
   
-   /* text-align: center ; */
-  /* } */
-  /* ol {
-
-  } */
+  p{
+    text-decoration-color: orangered;
+    
+  }
+  div {
+    Border: 2px solid blue;
+    Padding:88px 90px;
+    Width:50px;
+    Height:50px;
+    Position:relative;
+    Background-color:rgb(179, 146, 207);
+    Animation-name:Animi1;
+    Animation-duration:2s;
+    Animation-iteration-count:9;
+    }
+    #psycology  {
+      width: 20px;
+      
+      margin: 40px;
+    }
+    #mind {
+      width: 20px;
+      Height:50px;
+      margin: 80px;
+    }
+    P{
+      Animation-name:Animi1;
+      Animation-duration:2s;
+      }
+      @keyframes Animi1{
+        0% {background-color:rgb(92, 31, 172);left:0px;top:0px;}
+        25%{background-color:rgb(156, 156, 50);left:300px;top:0px;}
+        50%{background-color:rgb(201, 38, 174);left:300px;top:300px;}
+        75%{background-color:blue;left:0px;top:300px;}
+        100%{background-color:rgb(64, 112, 167);left:0px;top:0px;}
+      }
+ol {
+  border: 4px solid rgb(25, 0, 255);
+  position: relative;
+  background-color: violet;
+  animation-name: inherit;
+  width:200px;
+}
+ul{
+  border: 4px solid hsl(101, 85%, 30%);
+  position: relative;
+  background-color: rgb(236, 185, 45);
+  animation-name: inherit;
+  width:800px;
+  animation-play-state: running;
+}
