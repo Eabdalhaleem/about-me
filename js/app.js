@@ -10,15 +10,15 @@ alert(' welcome ' + username);
 
 function knowMe() {
   let ask1 = prompt('would you want to know who i am (yes,no) ?').toLowerCase();
-  while (ask1 !== 'yes' && ask1 !== 'no'&& ask1 !== 'y' && ask1 !== 'n') {
+  while (ask1 !== 'yes' && ask1 !== 'no' && ask1 !== 'y' && ask1 !== 'n') {
     ask1 = prompt('please enter your answer(yes,no)').toLowerCase();
   }
-  if (ask1 === 'yes') {
+  if (ask1 === 'yes' || ask1 === 'y') {
     // console.log ('yes');
     alert('your welcome');
     score++;
 
-  } else if (ask1 === 'no') {
+  } else if (ask1 === 'no' || ask1 === 'n') {
     alert('thank you');
   }
 }
@@ -28,15 +28,15 @@ knowMe();
 // ques2
 function food() {
   let ask2 = prompt('pizza is my favorite food?').toUpperCase();
-  while (ask2 !== 'YES' && ask2 !== 'NO'&& ask2 !== 'Y' && ask2 !== 'N') {
+  while (ask2 !== 'YES' && ask2 !== 'NO' && ask2 !== 'Y' && ask2 !== 'N') {
     ask2 = prompt('pizza is my favorite food?').toUpperCase();
 
   }
-  if (ask2 === 'YES'|| ask2 === 'Y') {
+  if (ask2 === 'YES' || ask2 === 'Y') {
     // console.log('you are right');
     alert('you are right');
     score++;
-  } else if (ask2 === 'NO'|| ask2 === 'N') {
+  } else if (ask2 === 'NO' || ask2 === 'N') {
     alert('sorry its wrong');
   }
 }
@@ -45,14 +45,14 @@ food();
 //  ques3
 function pets() {
   let ask3 = prompt('do i have a pet?').toLowerCase();
-  while (ask3 !== 'yes' && ask3 !== 'no'&& ask3 !== 'y' && ask3 !== 'n') {
+  while (ask3 !== 'yes' && ask3 !== 'no' && ask3 !== 'y' && ask3 !== 'n') {
     ask3 = prompt('do i have a pet?').toLowerCase();
   }
-  if (ask3 === 'yes'|| ask3 === 'y') {
+  if (ask3 === 'yes' || ask3 === 'y') {
     // console.log('correct');
     alert('correct');
     score++;
-  } else if (ask3 === 'no'|| ask3 === 'n') {
+  } else if (ask3 === 'no' || ask3 === 'n') {
     alert('wrong');
   }
 }
@@ -61,14 +61,14 @@ pets();
 // ques4
 function book() {
   let ask4 = prompt('i prefer watching tv than reading book?').toLowerCase();
-  while (ask4 !== 'yes' && ask4 !== 'no'&& ask4 !== 'y' && ask4 !== 'n') {
+  while (ask4 !== 'yes' && ask4 !== 'no' && ask4 !== 'y' && ask4 !== 'n') {
     ask4 = prompt('i prefer watching tv than reading book?').toLowerCase();
   }
-  if (ask4 === 'yes'||ask4 === 'y') {
+  if (ask4 === 'yes' || ask4 === 'y') {
     // console.log('wrong i dont like watching tv');
     alert('wrong i dont like watching tv');
 
-  } else if (ask4 === 'no'||ask4 === 'no') {
+  } else if (ask4 === 'no' || ask4 === 'n') {
     alert('yes i prefer reading book');
     score++;
   }
@@ -78,10 +78,10 @@ book();
 // ques5
 function chocolate() {
   let ask5 = prompt('do i like chocolate?').toLowerCase();
-  while (ask5 !== 'yes' && ask5 !== 'no'&& ask5 !== 'y' && ask5 !== 'n'){
+  while (ask5 !== 'yes' && ask5 !== 'no' && ask5 !== 'y' && ask5 !== 'n') {
     ask5 = prompt('do i like chocolate?').toLowerCase();
   }
-  if ((ask5 === 'yes')||(ask5 === 'y') ) {
+  if ((ask5 === 'yes') || (ask5 === 'y')) {
     // console.log('yes i like chocolate');
     alert('yes i like chocolate');
     score++;
@@ -109,7 +109,7 @@ function sibling() {
 
     }
   }
-  alert('the right answer is 3');
+  alert('i have 3 sibling');
 }
 sibling();
 
@@ -126,17 +126,20 @@ function catName() {
       break;
     }
     else {
-      alert(' wrong,you still have '+ (5-i) +' attempts ');
+      alert(' wrong,you still have ' + (5 - i) + ' attempts ');
       // alert(` wrong,you still have ${5-i} attempts `);
+
+
+
 
 
     }
   }
-  alert (cats);
+  alert('my cats name :' + cats);
 }
 catName();
 alert('your score is= ' + score);
-alert('good job , see you !');
+alert('good job , see you !' + username);
 
 
 
