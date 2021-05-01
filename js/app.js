@@ -5,21 +5,22 @@ let score = 0;
 let username = prompt('what is your name ');
 console.log(username);
 alert(' welcome ' + username);
+alert('lets know about me!!');
 
 // ques1
 
 function knowMe() {
-  let ask1 = prompt('would you want to know who i am (yes,no) ?').toLowerCase();
+  let ask1 = prompt('am i morning person ?').toLowerCase();
   while (ask1 !== 'yes' && ask1 !== 'no' && ask1 !== 'y' && ask1 !== 'n') {
     ask1 = prompt('please enter your answer(yes,no)').toLowerCase();
   }
   if (ask1 === 'yes' || ask1 === 'y') {
     // console.log ('yes');
-    alert('your welcome');
+    alert('yes i am morning person');
     score++;
 
   } else if (ask1 === 'no' || ask1 === 'n') {
-    alert('thank you');
+    alert('opps ,this is wrong');
   }
 }
 knowMe();
@@ -135,7 +136,7 @@ function catName() {
 
     }
   }
-  alert('my cats name :' + cats);
+  alert('my cats name : ' + cats);
 }
 catName();
 alert('your score is= ' + score);
