@@ -82,11 +82,11 @@ function chocolate() {
   while (ask5 !== 'yes' && ask5 !== 'no' && ask5 !== 'y' && ask5 !== 'n') {
     ask5 = prompt('do i like chocolate?').toLowerCase();
   }
-  if ((ask5 === 'yes') || (ask5 === 'y')) {
+  if (ask5 === 'yes' || ask5 === 'y') {
     // console.log('yes i like chocolate');
     alert('yes i like chocolate');
     score++;
-  } else if (ask5 === 'no') {
+  } else if (ask5 === 'no' || ask5 === 'n') {
     alert('oops this is wrong');
   }
 }
