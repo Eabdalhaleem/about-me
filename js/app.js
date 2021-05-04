@@ -15,7 +15,7 @@ function knowMe() {
     ask1 = prompt('please enter your answer(yes,no)').toLowerCase();
   }
   if (ask1 === 'yes' || ask1 === 'y') {
-    // console.log ('yes');
+
     alert('yes i am morning person');
     score++;
 
@@ -34,7 +34,7 @@ function food() {
 
   }
   if (ask2 === 'YES' || ask2 === 'Y') {
-    // console.log('you are right');
+
     alert('you are right');
     score++;
   } else if (ask2 === 'NO' || ask2 === 'N') {
@@ -50,7 +50,7 @@ function pets() {
     ask3 = prompt('do i have a pet?').toLowerCase();
   }
   if (ask3 === 'yes' || ask3 === 'y') {
-    // console.log('correct');
+
     alert('correct');
     score++;
   } else if (ask3 === 'no' || ask3 === 'n') {
@@ -66,7 +66,7 @@ function book() {
     ask4 = prompt('i prefer watching tv than reading book?').toLowerCase();
   }
   if (ask4 === 'yes' || ask4 === 'y') {
-    // console.log('wrong i dont like watching tv');
+
     alert('wrong i dont like watching tv');
 
   } else if (ask4 === 'no' || ask4 === 'n') {
@@ -83,7 +83,7 @@ function chocolate() {
     ask5 = prompt('do i like chocolate?').toLowerCase();
   }
   if (ask5 === 'yes' || ask5 === 'y') {
-    // console.log('yes i like chocolate');
+
     alert('yes i like chocolate');
     score++;
   } else if (ask5 === 'no' || ask5 === 'n') {
@@ -97,14 +97,14 @@ function sibling() {
   for (let i = 0; i < 4; i++) {
     let ask6 = Number(prompt('how many sibling do i have?'));
     if (ask6 === 3) {
-      // console.log('this is right');
+
       alert('this is right');
       score++;
       break;
 
     } else if (ask6 < 4) {
       alert('too low');
-      // console.log ('too low');
+
     } else {
       alert('too high');
 
@@ -121,14 +121,14 @@ function catName() {
   for (let i = 0; i < 6; i++) {
     let ask7 = prompt(' guess my cats name?').toLowerCase();
     if (cats.includes(ask7)) {
-      // console.log('yes this is one of them');
+
       alert('yes this is one of them');
       score++;
       break;
     }
     else {
       alert(' wrong,you still have ' + (5 - i) + ' attempts ');
-      // alert(` wrong,you still have ${5-i} attempts `);
+
 
 
 
